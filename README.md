@@ -3,13 +3,14 @@
 #### Intro
 
 1. Create your project filder `mkdir project`
-1. Scaffold out your project and generate a `package.json` file with `npm init`
-1. `git init`, and make a `.gitignore` file
+2. Scaffold out your project and generate a `package.json` file with `npm init`
+3. <details><summary>`git init`, and make a `.gitignore` file</summary>
    ```json
    node_modules
    bundle.js
    bundle.js.map
    ```
+   </details>
 
 #### React
 
@@ -36,16 +37,20 @@
 
    </details>
 
-2. Basic Server: Decide how your index.html will be served up to the browser. Will you use an express server, or a quicker solution like webpack-dev-server, http-server, or some other static file server?
+2. <details><summary>Basic Server: Decide how your index.html will be served up to the browser.</summary>
+   Will you use an express server, or a quicker solution like webpack-dev-server, http-server, or some other static file server?
    Tools like webpack-dev-server and http-server are very useful - they will serve up static files (including your index.html) from the folder you start them from. This is great if you want to start writing a client-side application but don't want to write a full express server yet (or if you don't need one - for example, if you write an application that uses a cloud database like Firebase, or a simple client app that just needs to make AJAX requests to some external APIs).
 
    You could install them on a project-by-project basis, or install them globally using the -g flag.
 
    if you're using express server...
 
-3. install your DEV dependencies `npm install --save-dev webpack webpack-cli babel-core babel-loader babel-preset-react`
+    </details>
+
+3. <details><summary>install your DEV dependencies `npm install --save-dev webpack webpack-cli babel-core babel-loader babel-preset-react`</summary>
 
    If you want to be proactive in making sure your code is safe for older browsers, you may also install `babel-preset-env`. If you want to avail yourself of some newer language features (like class properties), you should also install `babel-preset-stage-2`
+   </details>
 
 4. install your regular dependencies `npm install --save react react-dom react-router-dom`
 
