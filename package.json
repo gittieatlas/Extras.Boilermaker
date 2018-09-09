@@ -1,0 +1,28 @@
+{
+  "name": "boilermaker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/app.js",
+  "scripts": {
+    "start": "node server",
+    "start-dev": "webpack -w & nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-router-dom": "^4.3.1"
+  }
+}
